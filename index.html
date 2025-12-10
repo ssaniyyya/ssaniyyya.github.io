@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saniya Salunke | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">Saniya<span> Salunke</span></div>
+      <nav>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Timeline</a>
+        <a href="#github" class="nav-link">GitHub</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <!-- Theme toggle -->
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="section hero reveal">
+      <div class="hero-left">
+        <p class="pill">BSc CS · Aspiring Data Scientist & SWE</p>
+        <h1>Hi, I'm <span class="accent">Saniya</span> 👋</h1>
+        <h2 class="typewriter">
+          I am <span id="role-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I love building real-world projects using Data Science, Web Development
+          and Cloud technologies – from smart navigation systems to AI-powered
+          assistive tools.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="assets/Saniya_Salunke_CV.pdf" class="btn ghost" download>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Year BSc CS</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2026</span>
+            <span class="stat-label">Target: Microsoft / Google</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="glass-card hero-card reveal">
+          <p class="card-title">Cloud + Web Services Project</p>
+          <p class="card-desc">
+            This portfolio is deployed on <strong>GitHub Pages / Netlify / Vercel</strong>
+            as a part of my Cloud Computing & Web Services course.
+          </p>
+          <ul class="chip-list">
+            <li class="chip">HTML5</li>
+            <li class="chip">CSS3</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">GitHub Pages</li>
+          </ul>
+        </div>
+        <div class="glass-card hero-card secondary reveal">
+          <p class="card-title">Currently Learning</p>
+          <p class="card-desc">
+            Data Structures & Algorithms · Machine Learning · System Design Basics
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="two-col">
+        <p>
+          I’m a BSc Computer Science student from Mumbai with a strong interest in
+          <strong>Data Science</strong> and <strong>Software Engineering</strong>.
+          I enjoy turning ideas into practical applications – especially those that
+          help people in real life, like assistive technologies and productivity tools.
+        </p>
+        <p>
+          My goal is to become a <strong>Data Scientist / Software Engineer</strong>
+          at companies like Microsoft or Google. I’m constantly working on projects,
+          learning new tech, and improving my problem-solving skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt reveal">
+      <h2 class="section-title">Skills & Tech Stack</h2>
+      <div class="skills-wrapper">
+        <div class="skills-column">
+          <h3>Core</h3>
+          <ul>
+            <li>Python, C / C++ Basics</li>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures & Algorithms</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Data & ML</h3>
+          <ul>
+            <li>Pandas, NumPy, Matplotlib</li>
+            <li>Machine Learning Basics (Scikit-learn)</li>
+            <li>Data Cleaning & EDA</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Web & Cloud</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Flask, Streamlit</li>
+            <li>Git, GitHub, GitHub Pages / Netlify / Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects with filters -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">
+        Filter projects by category and click on any card to see more details.
+      </p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ds">Data Science</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI / Assistive</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: AI Assistive -->
+        <article class="project-card reveal"
+                 data-category="ai,web"
+                 data-title="AI-Based Assistive Web Companion"
+                 data-long-desc="A web app to help differently-abled users with voice guidance, smart navigation and an accessible interface that works without webcam hardware. Includes route narration, favorites, emergency button and an accessibility-focused chatbot."
+                 data-tech="Python, Streamlit, NLP, REST APIs"
+                 data-link-code="https://github.com/ssaniyyya/AI-Assistive-Navigation-App"
+                 data-link-demo="">
+          <h3>AI-Based Assistive Web Companion</h3>
+          <p>
+            Web app to help differently-abled users with voice guidance, smart navigation and an accessible UI.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Streamlit</li>
+            <li>Accessibility</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/ssaniyyya/AI-Assistive-Navigation-App"
+               target="_blank"
+               rel="noopener">
+               View Code
+            </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener">
+               Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Patient Detail & Appointment Management -->
+        <article class="project-card reveal"
+                 data-category="web"
+                 data-title="Patient Detail and Appointment Management System"
+                 data-long-desc="A full-stack web application for managing patient records and appointment scheduling. It streamlines hospital/clinic operations by allowing staff to add, view, update and delete patient data, as well as schedule and track doctor appointments using a clean web interface backed by SQLite."
+                 data-tech="Python, Flask, SQLite, HTML, CSS, JavaScript"
+                 data-link-code="https://github.com/ssaniyyya/Patient_Appointment_Management_System"
+                 data-link-demo="">
+          <h3>Patient Detail and Appointment Management System</h3>
+          <p>
+            Full-stack web app to manage patient records and doctor appointments with a simple, hospital-friendly UI.
+          </p>
+          <ul class="tag-list">
+            <li>Flask</li>
+            <li>SQLite</li>
+            <li>Full-Stack</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/ssaniyyya/Patient_Appointment_Management_System"
+               target="_blank"
+               rel="noopener">
+               View Code
+            </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener">
+               Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: WhatsApp-Style Chat App -->
+        <article class="project-card reveal"
+                 data-category="web"
+                 data-title="WhatsApp-Style Real-Time Chat App"
+                 data-long-desc="A real-time chat application that mimics WhatsApp-style messaging. Built with a React.js frontend and a Node.js + Express + Socket.IO backend. Includes a dummy login to join as different users in separate tabs and supports live, bi-directional messaging with chat bubbles and WhatsApp-like UI."
+                 data-tech="React.js, Node.js, Express, Socket.IO, CSS"
+                 data-link-code="https://github.com/ssaniyyya/chat-app"
+                 data-link-demo="">
+          <h3>WhatsApp-Style Real-Time Chat App</h3>
+          <p>
+            Real-time React + Node chat app with Socket.IO and WhatsApp-inspired UI for two-user conversations.
+          </p>
+          <ul class="tag-list">
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Socket.IO</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/ssaniyyya/chat-app"
+               target="_blank"
+               rel="noopener">
+               View Code
+            </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener">
+               Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: Mini Jira -->
+        <article class="project-card reveal"
+                 data-category="web"
+                 data-title="Mini Jira – Bug Tracking System"
+                 data-long-desc="A Flask + SQLite based project management and bug tracking system inspired by Jira, with features like tickets, priorities, status workflow, search and user assignments."
+                 data-tech="Flask, SQLite, Bootstrap"
+                 data-link-code="#"
+                 data-link-demo="">
+          <h3>Mini Jira – Bug Tracking System</h3>
+          <p>
+            Bug tracking and project management tool with ticket statuses, priorities and simple workflows.
+          </p>
+          <ul class="tag-list">
+            <li>Flask</li>
+            <li>SQLite</li>
+            <li>Bootstrap</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: Resume Analyzer -->
+        <article class="project-card reveal"
+                 data-category="ds,ai"
+                 data-title="AI Resume Analyzer"
+                 data-long-desc="Upload a resume and get insights on keywords, missing skills and match percentage for specific roles such as Data Scientist or Software Engineer. Uses NLP libraries for text processing."
+                 data-tech="Python, NLP, Streamlit"
+                 data-link-code="#"
+                 data-link-demo="">
+          <h3>AI Resume Analyzer</h3>
+          <p>
+            Analyzes resumes and suggests missing skills & keywords for targeted job roles.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>NLP</li>
+            <li>Streamlit</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: EchoMap+ -->
+        <article class="project-card reveal"
+                 data-category="ai,ds"
+                 data-title="AI-Powered Smart Navigation for Visually Impaired (EchoMap+)"
+                 data-long-desc="EchoMap+ is a smart navigation prototype that focuses on visually impaired users. It provides route narration, safe route finder, favorites, offline mode idea and an AI assistant for accessibility."
+                 data-tech="Python, OpenRouteService API, Geocoding"
+                 data-link-code="#"
+                 data-link-demo="">
+          <h3>Smart Navigation for Visually Impaired (EchoMap+)</h3>
+          <p>
+            Navigation prototype with route narration, safe routes and favorites for visually impaired users.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>APIs</li>
+            <li>Navigation</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="experience" class="section section-alt reveal">
+      <h2 class="section-title">Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2023 – Present</p>
+            <h3>BSc Computer Science</h3>
+            <p>
+              Completed 2nd year, entering 3rd year. Actively building projects in Data
+              Science and Web Development, participating in coding events and college fests.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2024 – 2025</p>
+            <h3>Projects & Learning</h3>
+            <p>
+              Built AI-based assistive tools, navigation systems and a bug tracking
+              application. Strengthened DSA and Python foundations.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2026 (Goal)</p>
+            <h3>Software Engineer / Data Scientist</h3>
+            <p>
+              Targeting roles at companies like Microsoft or Google, focusing on strong
+              fundamentals and impactful projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub stats (uses GitHub API from JS) -->
+    <section id="github" class="section reveal">
+      <h2 class="section-title">GitHub Overview</h2>
+      <p class="section-subtitle">
+        Fetched live from the GitHub API for username:
+        <strong id="gh-username-label">ssaniyyya</strong>
+      </p>
+
+      <div class="github-grid">
+        <div class="glass-card reveal">
+          <h3>Profile Snapshot</h3>
+          <p class="card-desc" id="gh-bio">
+            Loading GitHub data…
+          </p>
+          <ul class="github-stats">
+            <li><span id="gh-repos">–</span> Public Repos</li>
+            <li><span id="gh-followers">–</span> Followers</li>
+            <li><span id="gh-gists">–</span> Public Gists</li>
+          </ul>
+          <a id="gh-profile-link" href="#" target="_blank" class="btn ghost small">
+            View GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        Want to collaborate, discuss a project or share an opportunity? Feel free to reach out.
+      </p>
+      <div class="contact-grid">
+        <div class="glass-card contact-card reveal">
+          <h3>Direct</h3>
+          <p>Email: <a href="mailto:saniyya164@gmail.com">saniyya164@gmail.com</a></p>
+          <p>Location: Mumbai, India</p>
+        </div>
+        <div class="glass-card contact-card reveal">
+          <h3>Profiles</h3>
+          <p>GitHub: <a href="https://github.com/ssaniyyya" target="_blank">github.com/ssaniyyya</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/saniya-s-a20088307" target="_blank">linkedin.com/in/saniya-s-a20088307</a></p>
+        </div>
+        <!-- Cloud-backed contact form using Formspree -->
+        <form class="glass-card contact-form reveal"
+              action="https://formspree.io/f/mblnzpje"
+              method="POST">
+          <h3>Quick Message</h3>
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="3" required></textarea>
+          </label>
+          <button type="submit" class="btn primary full-width">Send Message</button>
+          <p class="form-note">Form handled by a cloud email service (Formspree).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    © 2025 Saniya Salunke 
+  </footer>
+
+  <!-- Project modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content glass-card">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p class="modal-tech"><strong>Tech used:</strong> <span id="modal-tech"></span></p>
+      <div class="modal-links">
+        <a id="modal-code-link" href="#" target="_blank" class="btn ghost small">View Code</a>
+        <a id="modal-demo-link" href="#" target="_blank" class="btn primary small">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
